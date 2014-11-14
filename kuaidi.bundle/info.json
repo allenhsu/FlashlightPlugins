@@ -1,0 +1,6 @@
+{
+	"name": "kuaidi",
+	"displayName": "Kuaidi",
+	"description": "Look for express info",
+	"examples": ["kuaidi 100033892580"]
+}
