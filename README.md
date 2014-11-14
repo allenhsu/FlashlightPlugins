@@ -23,3 +23,11 @@ Sample code of Flashlight (https://github.com/nate-parrott/Flashlight/) plugins
 - `haomatong 10086` to fetch info from haomatong for specified phone number
 
 `hmt` is short for `haomatong`, use `hmt 10086` for less typing.
+
+![Haomatong](images/haomatong.png)
+
+###Kuaidi###
+
+- `kuaidi 100033892580` to fetch express info from kuaidi100.com
+
+![Kuaidi](images/kuaidi.png)
