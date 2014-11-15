@@ -1,13 +1,16 @@
+[中文](README_CN.md)
+
 FlashlightPlugins
 =================
 
-Sample code of Flashlight (https://github.com/nate-parrott/Flashlight/) plugins
+4th-party plugins of Flashlight (https://github.com/nate-parrott/Flashlight/)
 
 ##Install##
 
-- Install and enable Flashlight (https://github.com/nate-parrott/Flashlight/).
+- Install and enable Flashlight (https://github.com/nate-parrott/Flashlight/releases)
 - Copy plugin bundle to `~/Library/FlashlightPlugins`
-- No step 3
+
+If you are familiar with command lines, you can use `ln -s bundle_name.bundle ~/Library/FlashlightPlugins` for easier update via git.
 
 ##Usage##
 
