@@ -59,16 +59,15 @@ def results(parsed, original_query):
     li {
         font-size: 15px;
         color: #888;
-        padding: 5px 0;
+        padding: 3px 0;
     }
     .time {
         font-size: 12px;
-        color: #888;
-        margin-bottom: 3px;
+        color: #aaa;
     }
     .context {
         font-size: 15px;
-        color: #888;
+        color: #444;
     }
     .current .context {
         font-weight: bold;

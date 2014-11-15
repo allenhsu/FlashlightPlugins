@@ -44,7 +44,7 @@ def results(parsed, original_query):
     explains = basic.get('explains',[])
     basic_str = ''
     if len(explains) > 0:
-        basic_str = u'<h3>基础词典</h3><ul><li>%s</li></ul>' % '</li><li>'.join(explains)
+        basic_str = u'<div class="block"><h3>基础词典</h3><ul><li>%s</li></ul></div>' % '</li><li>'.join(explains)
 
 
     webs = result.get('web',[])
@@ -54,7 +54,7 @@ def results(parsed, original_query):
         value = u'；'.join(item.get('value'))
         web.append('%s <br> %s' % (item.get('key'),value))
     if len(web) > 0:
-        web_str = u'<h3>网络释义</h3><ul><li>%s</li></ul>' % '</li><li>'.join(web)
+        web_str = u'<div class="block"><h3>网络释义</h3><ul><li>%s</li></ul></div>' % '</li><li>'.join(web)
 
 
     temp_file = open('temp.html')
