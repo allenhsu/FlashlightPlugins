@@ -26,6 +26,9 @@ def get_error(error_code):
 
 def results(parsed, original_query):
     word = parsed['~string']
+
+
+
     response = get_response(word)
     result = json.loads(response)
 
@@ -44,7 +47,6 @@ def results(parsed, original_query):
         basic_str = u'<h3>基础词典</h3><ul><li>%s</li></ul>' % '</li><li>'.join(explains)
 
 
-
     webs = result.get('web',[])
     web = []
     web_str = ''
@@ -59,8 +61,7 @@ def results(parsed, original_query):
     temp = temp_file.read().decode('utf-8')
     temp_file.close()
 
-
-    html = temp % dict(word=word, basic=basic_str, web=web_str)
+    html = temp % dict(word=word.decode('utf-8'), basic=basic_str, web=web_str)
 
 
     return {
@@ -74,4 +75,5 @@ def results(parsed, original_query):
 def run(word):
     import os
     import webbrowser
-    webbrowser.open_new_tab('http://dict.youdao.com/search?q=%s' % word)
+    url = 'http://dict.youdao.com/search?q=%s' % urllib.quote(word.encode('utf-8'))
+    webbrowser.open_new_tab(url)
