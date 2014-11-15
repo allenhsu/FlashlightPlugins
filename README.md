@@ -31,3 +31,16 @@ Sample code of Flashlight (https://github.com/nate-parrott/Flashlight/) plugins
 - `kuaidi 100033892580` to fetch express info from kuaidi100.com
 
 ![Kuaidi](images/kuaidi.png)
+
+
+###YoudaoDic###
+
+- `youdao one` to translate `one` from English to Chinese.
+- `youdao 汪` to translate `汪` from Chinese to English.
+
+`yd` is short for `youdao`, you can also use `yd flower` for less typing.
+
+
+Press ENTER can see translation in dic.youdao.com with browser
+
+![](http://whyother.qiniudn.com/QQ20141115-5@2x.png)
