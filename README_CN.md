@@ -44,4 +44,11 @@ FlashlightPlugins
 
 回车在浏览器中查看有道上的完整释义
 
-![](images/youdao.png)
+![Youdao](images/youdao.png)
+
+###Douban###
+
+- `douban 星际穿越` 搜索电影
+
+![Douban](images/douban.png)
+

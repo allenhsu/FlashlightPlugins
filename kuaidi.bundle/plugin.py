@@ -85,7 +85,15 @@ def results(parsed, original_query):
         i += 1
     content = content + '</ul>'
     html = u'<div class="body"><div class="content"><h1 class="number">%(number)s</h1><div class="data">%(content)s</div></div></div>' % dict(number=number, content=content)
+    url = 'http://www.kuaidi100.com/chaxun?com=%s&nu=%s' % (comCode, number)
     return {
-        "title": last_status,
+        "title": u'%s（回车在快递 100 查看更多信息）' % number,
         "html": '%s%s' % (style, html),
+        "run_args": [url],
+        "webview_user_agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 7_0 like Mac OS X) AppleWebKit/537.51.1 (KHTML, like Gecko) Version/7.0 Mobile/11A465 Safari/9537.53",
+        "webview_links_open_in_browser": True,
     }
+
+def run(url):
+    if url:
+        os.system('open "{0}"'.format(url))
