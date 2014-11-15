@@ -35,7 +35,7 @@ FlashlightPlugins
 
 ![Kuaidi](images/kuaidi.png)
 
-###有道词典###
+###有道词典 (作者：[Hyde Wang](https://github.com/callmewhy))###
 
 - `youdao one` 英译中
 - `youdao 汪` 中译英

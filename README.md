@@ -35,7 +35,7 @@ If you are familiar with command lines, you can use `ln -s bundle_name.bundle ~/
 
 ![Kuaidi](images/kuaidi.png)
 
-###YoudaoDic###
+###YoudaoDic (by [Hyde Wang](https://github.com/callmewhy))###
 
 - `youdao one` to translate `one` from English to Chinese.
 - `youdao 汪` to translate `汪` from Chinese to English.
