@@ -24,19 +24,13 @@ Sample code of Flashlight (https://github.com/nate-parrott/Flashlight/) plugins
 
 `hmt` is short for `haomatong`, use `hmt 10086` for less typing.
 
-Press `ENTER` to see more info on sogou.com in browser
-
 ![Haomatong](images/haomatong.png)
 
 ###Kuaidi###
 
 - `kuaidi 100033892580` to fetch express info from kuaidi100.com
 
-Press ENTER to see more info on kuaidi100.com in browser
-
-
 ![Kuaidi](images/kuaidi.png)
-
 
 ###YoudaoDic###
 

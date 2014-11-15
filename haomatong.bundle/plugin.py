@@ -22,11 +22,11 @@ def results(parsed, original_query):
         info = num_info.split(u'：')
         if len(info) > 1:
             if amount > 0:
-                title = '%s (%s, %d reports)' % (info[0], info[1], amount)
+                title = u'%s（%s，%d 位用户举报）' % (info[1], info[0], amount)
             else:
-                title = '%s (%s)' % (info[0], info[1])
+                title = u'%s（%s）' % (info[1], info[0])
         else:
-            title = '%s' % (num_info)
+            title = u'%s' % (num_info)
     style = u'''
     <style>
     * {
@@ -64,5 +64,5 @@ def results(parsed, original_query):
     html = u'<div class="body"><div class="content"><h1 class="number">%(number)s</h1><h3>%(title)s</h3></div></div>' % dict(number=number, title=title)
     return {
         "title": title,
-        "html": '%s%s' % (style, html),
+        "html": u'%s%s' % (style, html),
     }

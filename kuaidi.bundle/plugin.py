@@ -76,13 +76,16 @@ def results(parsed, original_query):
     </style>
     '''
     content = '<ul>'
+    last_status = ''
     i = 0
     for item in data:
+        if not last_status:
+            last_status = item.get('context', '')
         content = content + '<li class="%s"><p class="time">%s</p><p class="context">%s</p></li>' % ('current' if i == 0 else '', item.get('time'), item.get('context'))
         i += 1
     content = content + '</ul>'
     html = u'<div class="body"><div class="content"><h1 class="number">%(number)s</h1><div class="data">%(content)s</div></div></div>' % dict(number=number, content=content)
     return {
-        "title": number,
+        "title": last_status,
         "html": '%s%s' % (style, html),
     }
