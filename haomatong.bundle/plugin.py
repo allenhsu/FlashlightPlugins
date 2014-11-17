@@ -2,7 +2,6 @@
 #!/usr/bin/python
 
 import sys, os, re
-import urllib2
 import json
 
 def results(parsed, original_query):

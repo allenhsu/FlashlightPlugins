@@ -3,9 +3,6 @@
 
 import sys, os, re
 import urllib
-import urllib2
-import json
-import random
 
 def results(parsed, original_query):
     keyword = parsed.get('~keyword', '').strip()

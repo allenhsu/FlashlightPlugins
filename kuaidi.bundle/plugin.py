@@ -2,7 +2,7 @@
 #!/usr/bin/python
 
 import sys, os, re
-import urllib2
+import urllib
 import json
 import random
 
@@ -18,6 +18,6 @@ def results(parsed, original_query):
         "webview_links_open_in_browser": True,
     }
 
-def run(url):
-    if url:
-        os.system('open "http://m.kuaidi100.com/result.jsp?nu={0}"'.format(url))
+def run(number):
+    if number:
+        os.system('open "http://m.kuaidi100.com/result.jsp?nu={0}"'.format(urllib.quote(number)))
