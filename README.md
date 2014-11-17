@@ -12,10 +12,6 @@ FlashlightPlugins
 
 If you are familiar with command lines, you can use `ln -s bundle_name.bundle ~/Library/FlashlightPlugins` for easier update via git.
 
-##TODOs##
-
-- Put network requests to JS instead of Python, to improve performance
-
 ##Usage##
 
 ###Timestamp###
