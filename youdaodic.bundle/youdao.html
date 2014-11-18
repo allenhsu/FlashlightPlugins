@@ -41,22 +41,26 @@
     function createHTMLForJson(json) {
         console.log(json)
 
-        var basic = json.basic.explains
         var basicStr = ""
-        for (var i = 0; i < basic.length; i++) {
-            basicStr += "<li>" + basic[i] + "</li>"
-        }
-        if (basicStr != "") {
-            basicStr = "<div class='block'><h3>基础词典</h3><ul>" + basicStr + "</ul></div>"
+        if (json.basic) {
+            var basic = json.basic.explains
+            for (var i = 0; i < basic.length; i++) {
+                basicStr += "<li>" + basic[i] + "</li>"
+            }
+            if (basicStr != "") {
+                basicStr = "<div class='block'><h3>基础词典</h3><ul>" + basicStr + "</ul></div>"
+            }
         }
 
-        var web = json.web
         var webStr = ""
-        for (var i = 0; i < web.length; i++) {
-            webStr += "<li>" + web[i].key + "<br>" + web[i].value.join("；")+ "</li>"
-        }
-        if (webStr != "") {
-            webStr = "<div class='block'><h3>网络释义</h3><ul>" + webStr + "</ul></div>"
+        if (json.web) {
+            var web = json.web
+            for (var i = 0; i < web.length; i++) {
+                webStr += "<li>" + web[i].key + "<br>" + web[i].value.join("；")+ "</li>"
+            }
+            if (webStr != "") {
+                webStr = "<div class='block'><h3>网络释义</h3><ul>" + webStr + "</ul></div>"
+            }
         }
 
         return "<div class='content'><h1>" + json.query + "</h1>" + basicStr + webStr + "</div>"
@@ -150,4 +154,5 @@
         </div>
     </div>
 </body>
+
 </html>
