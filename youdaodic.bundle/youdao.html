@@ -25,8 +25,10 @@
         document.getElementById("results").innerHTML = createHTMLForJson(data)
     }
 
+	var word = "<!--WORD-->";
+
     function load() {
-        var url = "http://fanyi.youdao.com/openapi.do?keyfrom=spotlightplugin&key=1323324025&type=data&doctype=json&version=1.1&q=why"
+        var url = "http://fanyi.youdao.com/openapi.do?keyfrom=spotlightplugin&key=1323324025&type=data&doctype=json&version=1.1&q=" + word;
         xhr(url, function(response) {
             document.getElementById("loading").style.display = 'none'
             if (response) {
@@ -63,13 +65,12 @@
             }
         }
 
-        return "<div class='content'><h1>" + json.query + "</h1>" + basicStr + webStr + "</div>"
+        return "<div><h1>" + json.query + "</h1>" + basicStr + webStr + "</div>"
 
     }
 
     load()
     </script>
-   
 
    <style>
 

@@ -15,7 +15,7 @@ def run(word):
 
 def results(parsed, original_query):
     word = parsed['~string']
-    html = open("youdao.html").read().replace("why", word)
+    html = open("youdao.html").read().replace("<!--WORD-->", word)
     return {
         'title': '%s 的翻译 - 回车打开网页查看' % word,
         "html": html,
