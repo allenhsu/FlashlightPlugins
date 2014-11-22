@@ -13,16 +13,17 @@ def getURL(parsed):
     # print url;
     return url;
 
-def getContent(url):
-    response = urllib2.urlopen(url).read()
-    response=response.replace('href="/','href="http://youzhihu.com/')
-    return response
-
 def results(parsed, original_query):
     html = ""
     try:
         url = getURL(parsed)
-        html = getContent(url)
+        html = """<script>
+                setTimeout(function() {
+                     window.location = %s;
+                }, 500); // throttle a little
+                </script>
+                """ % (json.dumps(url))
+
     except:
         error_file = open('error.html')
         html = error_file.read().decode('utf-8')
