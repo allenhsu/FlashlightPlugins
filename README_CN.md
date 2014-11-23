@@ -52,3 +52,19 @@ FlashlightPlugins
 
 ![Douban](images/douban.png)
 
+###知乎日报 (By [小贼ZH](https://github.com/ZHONGHuanGit/ZhihuDaily))
+
+
+- `zhihu daily`  展示日报
+-  `zhihu hot` 展示今日热点话题
+-  `zhihu 20141111` 展示某个日期的话题
+
+![](https://raw.githubusercontent.com/ZHONGHuanGit/ZhihuDaily/master/zhihu1.gif)
+
+![](https://raw.githubusercontent.com/ZHONGHuanGit/ZhihuDaily/master/zhihuHot.gif)
+
+![](https://raw.githubusercontent.com/ZHONGHuanGit/ZhihuDaily/master/zhihuDate.gif)
+
+
+
+
