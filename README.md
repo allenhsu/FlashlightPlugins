@@ -52,3 +52,18 @@ Press ENTER to see translation on dic.youdao.com in browser
 
 ![Douban](images/douban.png)
 
+###ZhiHuDaily (By [小贼ZH](https://github.com/ZHONGHuanGit/ZhihuDaily))
+
+Zhihu is the chinese website like quora
+
+- `zhihu daily`  to show zhihu daily 
+-  `zhihu hot` to show zhihu hot topics
+-  `zhihu 20141111` to show zhihu hot topics of the specific date
+
+![](https://raw.githubusercontent.com/ZHONGHuanGit/ZhihuDaily/master/zhihu1.gif)
+
+![](https://raw.githubusercontent.com/ZHONGHuanGit/ZhihuDaily/master/zhihuHot.gif)
+
+![](https://raw.githubusercontent.com/ZHONGHuanGit/ZhihuDaily/master/zhihuDate.gif)
+
+
