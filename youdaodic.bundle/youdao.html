@@ -25,7 +25,7 @@
         document.getElementById("results").innerHTML = createHTMLForJson(data)
     }
 
-	var word = "<!--WORD-->";
+    var word = "<!--WORD-->";
 
     function load() {
         var url = "http://fanyi.youdao.com/openapi.do?keyfrom=spotlightplugin&key=1323324025&type=data&doctype=json&version=1.1&q=" + word;
@@ -42,6 +42,14 @@
 
     function createHTMLForJson(json) {
         console.log(json)
+
+        var titleStr = ""
+        if(json.basic.phonetic) {
+          var phonetic = "[" + json.basic.phonetic + "]"
+          titleStr = "<h1>" + json.query + "<span>" + phonetic + "</span></h1>"
+        } else {
+          titleStr = "<h1>" + json.query + "</h1>"
+        }
 
         var basicStr = ""
         if (json.basic) {
@@ -65,7 +73,7 @@
             }
         }
 
-        return "<div><h1>" + json.query + "</h1>" + basicStr + webStr + "</div>"
+        return "<div>" + titleStr + basicStr + webStr + "</div>"
 
     }
 
@@ -97,6 +105,13 @@
         padding: 0px 0px 10px 0px;
         margin: 0px 0px 10px 0px;
         color: #444;
+    }
+
+    h1 > span {
+        font-size: 18px;
+        font-weight: normal;
+        color: #666;
+        padding-left: 10px;
     }
 
     h3, li {
