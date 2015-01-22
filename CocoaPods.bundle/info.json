@@ -1,0 +1,7 @@
+{
+	"name": "pod",
+	"displayName": "Searching CocoaPods",
+	"description": "A search plugin for CocoaPods.",
+	"examples": ["pod AFNEtWorking"],
+    "categories": ["Search", "Developer"]
+}
